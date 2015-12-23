@@ -1,0 +1,50 @@
+[
+  {
+    "region": "Algarve",
+    "price": 300
+  },
+  {
+    "region": "Antigua",
+    "price": 400
+  },
+  {
+    "region": "Cancun",
+    "price": 500
+  },
+  {
+    "region": "Corfu",
+    "price": 600
+  },
+  {
+    "region": "Costa Brava",
+    "price": 700
+  },
+  {
+    "region": "Costa Del Sol",
+    "price": 800
+  },
+  {
+    "region": "Crete",
+    "price": 900
+  },
+  {
+    "region": "Fuertaventura",
+    "price": 1000
+  },
+  {
+    "region": "Gran Canaria",
+    "price": 1100
+  },
+  {
+    "region": "Malta",
+    "price": 1200
+  },
+  {
+    "region": "Paphos",
+    "price": 1300
+  },
+  {
+    "region": "Zante",
+    "price": 1400
+  }
+]
