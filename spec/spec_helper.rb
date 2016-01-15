@@ -1,16 +1,11 @@
-require 'rspec'
+require 'sinatra'
+require 'rack/test'
+require './app'
+require './models/storage'
 
-ENV['DB_FILE'] = File.join(File.dirname(__FILE__), 'support', 'holidays.json')
+set :environment, :test
+set :views, './views'
 
 RSpec.configure do |config|
-  config.expect_with :rspec do |expectations|
-    expectations.include_chain_clauses_in_custom_matcher_descriptions = true
-  end
-
-  config.mock_with :rspec do |mocks|
-    mocks.verify_partial_doubles = true
-  end
-
-  config.disable_monkey_patching!
-  config.warnings = true
+  config.include Rack::Test::Methods
 end

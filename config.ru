@@ -1,5 +1,4 @@
-$LOAD_PATH << File.dirname(__FILE__)
+require 'sinatra'
+require './app'
 
-require 'lib/holidays'
-
-run Holidays::Application
+run Sinatra::Application
