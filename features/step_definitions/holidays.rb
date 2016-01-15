@@ -1,4 +1,5 @@
-Given(/^there are holidays available$/) do
+Given(/^I am on the home page$/) do
+  visit('/')
 end
 
 Then(/^I see the holidays listed$/) do
