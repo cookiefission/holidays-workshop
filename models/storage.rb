@@ -2,7 +2,9 @@ require 'json'
 
 class Storage
   def self.find(criteria)
-    holidays # .your_code_here
+    holidays.select do |holiday|
+      holiday['region'].downcase.include? criteria[:q].to_s.downcase
+    end
   end
 
   def self.holidays
