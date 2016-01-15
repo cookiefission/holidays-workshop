@@ -1,6 +1,6 @@
 describe Storage do
   describe '#find' do
-    subject(:holidays) { Storage.find(criteria) }
+    subject(:holidays) { Storage.new(criteria).find }
 
     context 'when given no criteria' do
       let(:criteria) { {} }
