@@ -9,15 +9,13 @@ class Storage
   end
 
   def find
-    filtered_by_name.compact
+    filtered_by_name
   end
 
   private
 
   def filtered_by_name
-    holidays.map do |holiday|
-      holiday if holiday['region'].downcase.include?(query)
-    end
+    holidays.select { |holiday| holiday['region'].downcase.include?(query) }
   end
 
   def query
