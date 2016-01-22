@@ -1,7 +1,7 @@
-require './models/storage'
+require './models/holiday'
 
 get '/' do
-  @holidays = Storage.find({})
+  @holidays = Holiday.find(params)
 
   erb :index
 end

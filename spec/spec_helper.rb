@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'rack/test'
 require './app'
-require './models/storage'
+require './models/holiday'
 
 set :environment, :test
 set :views, './views'

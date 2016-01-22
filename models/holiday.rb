@@ -1,6 +1,6 @@
 require 'json'
 
-class Storage
+class Holiday
 
   attr_reader :criteria
   private :criteria
