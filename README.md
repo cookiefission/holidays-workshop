@@ -8,7 +8,7 @@ Small sinatra app to filter holidays
 - open a browser at `localhost:9292`
 
 You should see this:
-<img src="https://raw.githubusercontent.com/cookiefission/holidays-workshop/feature/update-readme/images/holidays.png" />
+<img src="https://raw.githubusercontent.com/cookiefission/holidays-workshop/master/images/holidays.png" />
 
 <h3>TODO:</h3>
 This data is loaded from a JSON file.
