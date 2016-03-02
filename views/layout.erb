@@ -11,9 +11,19 @@
       <div class="col-md-6 col-md-offset-3">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">Holidays</h3>
+            <a href="/">
+              <h3 class="panel-title">Holidays</h3>
+            </a>
           </div>
           <div class="panel-body">
+
+          <div>
+            <form method="get">
+              <input id="search" name="q" type="text" />
+              <input id="search-submit" type="submit" value="search">
+            </form>
+          </div>
+          <br />
 
             <%= yield %>
 

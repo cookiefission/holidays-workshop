@@ -1,19 +1,30 @@
 require 'json'
 
 class Storage
-  def self.find(criteria)
-    holidays # .your_code_here
+  attr_reader :criteria
+  private :criteria
+
+  def initialize(criteria)
+    @criteria = criteria
   end
 
-  def self.holidays
-    new.load_holidays
-  end
-
-  def load_holidays
-    JSON.parse(File.read(db_file))
+  def find
+    filtered_by_name
   end
 
   private
+
+  def filtered_by_name
+    holidays.select { |holiday| holiday['region'].downcase.include?(query) }
+  end
+
+  def query
+    criteria.fetch('q', '').downcase
+  end
+
+  def holidays
+    JSON.parse(File.read(db_file))
+  end
 
   def db_file
     './db/holidays.json'
